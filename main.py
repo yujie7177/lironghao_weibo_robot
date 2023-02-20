@@ -46,6 +46,7 @@ def get_wb_list():
 def printlist(list):
     for i in list:
         print(i)
+        print('#######################################################')
 
 
 if __name__ == "__main__":
