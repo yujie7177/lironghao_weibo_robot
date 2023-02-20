@@ -15,6 +15,7 @@ def main():
             print(new_wb_list[0])
             cmd = "display notification \" 有新微博！！ \" with title \"lironghao_weibo_robot\""
             call(["osascript", "-e", cmd])
+            old_wb_list = new_wb_list
         else:
             now_time = datetime.datetime.now()
             time1_str = datetime.datetime.strftime(now_time,'%Y-%m-%d %H:%M:%S')
